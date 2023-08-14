@@ -40,7 +40,7 @@ function PaintingDetails() {
                         <span className='font-bold text-xl sm:text-5xl laptop:text-4xl ' >{painting.name}</span>
                         <span className=' text-gray sm:pt-4'>{painting.artist.name}</span>
                     </div>
-                    <Overview extraClasses="absolute top-4 left-4
+                    <Overview painting={painting} extraClasses="absolute top-4 left-4
                     sm:top-auto sm:left-auto sm:bottom-4 sm:left-4 laptop:ml-4"/>
                     <img src={ "." + painting.artist.image} alt={painting.artist.name}
                      className='absolute -bottom-24 left-4 w-16   h-16
