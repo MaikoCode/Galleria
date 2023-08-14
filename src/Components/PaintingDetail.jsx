@@ -3,6 +3,8 @@ import { useEffect } from 'react';
 import paintingData from "../assets/data.json"
 import Footer from './Footer';
 import Overview from "./Overview"
+import { useContext } from 'react';
+import { ExpositionContext } from '../context/ExpositionContext';
 
 
 
@@ -22,9 +24,13 @@ function PaintingDetails() {
         return null;
     }
 
+    const { currentIndex, tableaux } = useContext(ExpositionContext);
+    const progress = (currentIndex / (tableaux.length - 1)) * 100;
+
     return (
+        <>
         
-        <div className='m-4'>
+        <div className='m-4 mb-8'>
             <div className='flex flex-col laptop:flex-row justify-between'>
                 <div className='relative h-1/2  laptop:w-1/2 laptop:h-auto mb-[10vh] sm:mb-[5vh] mt-10 '>
                     <img src={ "." + painting.images.hero.large} alt={painting.title} 
@@ -65,8 +71,12 @@ function PaintingDetails() {
                     </div>  
                 </div>
             </div>
-           <Footer name={painting.name}  artist={painting.artist.name}/>
         </div>
+        <div className="progress-container">
+                <div className="progress-bar" style={{width: `${progress}%`}}></div>
+            </div>
+           <Footer name={painting.name}  artist={painting.artist.name}/>
+           </>
 
         
     );
