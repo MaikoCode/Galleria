@@ -1,4 +1,4 @@
-import IconView from '../assets/img/shared/icon-view-image.svg';
+import IconView from './assets/img/shared/icon-view-image.svg';
 import { createPortal } from 'react-dom';
 import { useState } from 'react';
 import ModalContent from './ModalContent';

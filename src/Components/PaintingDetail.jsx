@@ -1,6 +1,6 @@
 import { useParams, useNavigate  } from 'react-router-dom';
 import { useEffect } from 'react';
-import paintingData from "../assets/data.json"
+import paintingData from "./assets/data.json"
 import Footer from './Footer';
 import Overview from "./Overview"
 import { useContext } from 'react';
