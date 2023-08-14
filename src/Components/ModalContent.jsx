@@ -11,7 +11,7 @@ export default function ModalContent({painting, closeModal}) {
             <button onClick={closeModal} className="absolute -top-10 right-0 text-white uppercase hover:opacity-75 ">
                 Close
             </button>
-            <img src={"." + painting.images.hero.large} alt={painting.title} 
+            <img src={"/Galleria" + painting.images.hero.large} alt={painting.title} 
                 className="w-full h-full"
             />
         </div>

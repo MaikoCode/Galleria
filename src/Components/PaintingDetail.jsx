@@ -33,7 +33,7 @@ function PaintingDetails() {
         <div className='m-4 mb-8'>
             <div className='flex flex-col laptop:flex-row justify-between'>
                 <div className='relative h-1/2  laptop:w-1/2 laptop:h-auto mb-[10vh] sm:mb-[5vh] mt-10 '>
-                    <img src={ "." + painting.images.hero.large} alt={painting.title} 
+                    <img src={ "/Galleria" + painting.images.hero.large} alt={painting.title} 
                         className='h-[300px] w-full sm:h-[500px] sm:w-2/3 laptop:w-3/4  '
                     />
 
@@ -48,7 +48,7 @@ function PaintingDetails() {
                     </div>
                     <Overview painting={painting} extraClasses="absolute top-4 left-4
                     sm:top-auto sm:left-auto sm:bottom-4 sm:left-4 laptop:ml-4"/>
-                    <img src={ "." + painting.artist.image} alt={painting.artist.name}
+                    <img src={ "/Galleria" + painting.artist.image} alt={painting.artist.name}
                      className='absolute -bottom-24 left-4 w-16   h-16
                      sm:bottom-auto sm:left-auto sm:top-52 sm:right-16 laptop:-right-5 laptop:top-auto laptop:-bottom-8  sm:w-32 sm:h-32' />
                 </div>
