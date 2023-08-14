@@ -1,5 +1,5 @@
-import ButtonNext from './assets/img/shared/icon-next-button.svg'
-import ButtonPrev from './assets/img/shared/icon-back-button.svg'
+import ButtonNext from '../assets/img/shared/icon-next-button.svg'
+import ButtonPrev from '../assets/img/shared/icon-back-button.svg'
 import { useContext } from 'react'
 import { ExpositionContext } from '../context/ExpositionContext'
 import { useEffect } from 'react'

@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./Components/Header";
-import paintingData from "/assets/data.json";
+import paintingData from "./assets/data.json";
 import PaintingCard from "./Components/PaintingCard";
 import PaintingDetail from "./Components/PaintingDetail";
 import NotFound from "./Components/NotFound";
