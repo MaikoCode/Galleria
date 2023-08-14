@@ -17,7 +17,7 @@ function App() {
     };
 
     return (
-        <Router>
+        <Router basename="/Galleria/">
             <ExpositionProvider tableaux={data}>
                 <div className="min-h-screen font-white lg:mx-auto font-primary">
                     <Routes>
